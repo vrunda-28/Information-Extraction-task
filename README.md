@@ -17,7 +17,7 @@ The training script is responsible for training different linear layers for each
    To replicate the experiment and train the model, check the configuration in config_.yaml file and change the values if needed. Use the following command to train the model: <br>
 
    ```python train.py ``` <br>
-   The trained model checkpoints will be saved to the location specified in the output_dir configuration in config_.yaml. Make sure that the folder specified for the output_dir exists. <br>
+   The trained model checkpoints will be saved to the location specified in the output_dir configuration in config_.yaml. Make sure that the folder specified for the output_dir exists. Tensorboard log files are stored in `runs` directory. Run ```tensorboard --logdir=runs``` to visualize the train logs.<br>
 
 **Testing** <br>
 To test the model on your own test dataset, you need to provide the path to the model checkpoint to be used for testing and the path to the test CSV file. <br>
