@@ -1,0 +1,6 @@
+Epochs: 20
+learning_rate: 0.01
+Batch_size: 64
+train_csv: /speech/vrunda/NER/task_data/train_data.csv
+valid_csv: /speech/vrunda/NER/task_data/valid_data.csv
+output_dir: "/speech/vrunda/NER/vrunda/Model_checkpoints/checkpoint_epoch"
