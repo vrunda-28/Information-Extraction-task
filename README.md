@@ -10,6 +10,14 @@
    ```pip install -r requirements.txt``` <br>
    This command will install all the necessary libraries and packages needed for the experiments. <br>
 
+Markup : <details>
+           <summary>Title 1</summary>
+           <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+<details>
+<summary>**Training:**</summary>
+<p>The training script is responsible for training different linear layers for each task (Action, Object, and Location) on top of the BERT pre-trained model embeddings. All the hyperparameters and data paths for training the model are specified in the config.yaml file</p>
+</details>
+
 **Training:** <br>
 The training script is responsible for training different linear layers for each task (Action, Object, and Location) on top of the BERT pre-trained model embeddings. All the hyperparameters and data paths for training the model are specified in the config.yaml file. <br>
 
