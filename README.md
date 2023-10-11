@@ -10,14 +10,18 @@
    ```pip install -r requirements.txt``` <br>
    This command will install all the necessary libraries and packages needed for the experiments. <br>
 
-**Training:** <br>
-The training script is responsible for training different linear layers for each task (Action, Object, and Location) on top of the BERT pre-trained model embeddings. All the hyperparameters and data paths for training the model are specified in the config.yaml file. <br>
+<details>
+<summary>Training</summary>
+<p>The training script is responsible for training different linear layers for each task (Action, Object, and Location) on top of the BERT pre-trained model embeddings. All the hyperparameters and data paths for training the model are specified in the config.yaml file</p>
+</details>
 
-   **How to Train** <br>
-   To replicate the experiment and train the model, check the configuration in config_.yaml file and change the values if needed. Use the following command to train the model: <br>
+<details>
+<summary>How to Train</summary>
+<p>To replicate the experiment and train the model, check the configuration in config_.yaml file and change the values if needed. Use the following command to train the model: <br>
 
    ```python train.py ``` <br>
-   The trained model checkpoints will be saved to the location specified in the output_dir configuration in config_.yaml. Make sure that the folder specified for the output_dir exists. <br>
+   The trained model checkpoints will be saved to the location specified in the output_dir configuration in config_.yaml. Make sure that the folder specified for the output_dir exists. Tensorboard log files are stored in `runs` directory. Run ```tensorboard --logdir=runs``` to visualize the train logs.<br></p>
+</details>
 
 **Testing** <br>
 To test the model on your own test dataset, you need to provide the path to the model checkpoint to be used for testing and the path to the test CSV file. <br>
